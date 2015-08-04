@@ -18,7 +18,7 @@ $ npm install datasets
 var datasets = require( 'datasets' );
 ```
 
-#### English Male First Names
+#### Male First Names (en)
 
 A [list](https://github.com/datasets-io/male-first-names-en) of common male first names (also known as [given](https://en.wikipedia.org/wiki/Given_name) or personal names) in English speaking countries.
 
@@ -38,6 +38,42 @@ console.log( names );
 		"Abbott",
 		...
 	]
+*/
+```
+
+### Female First Names (en)
+
+A [list](https://github.com/datasets-io/female-first-names-en) of common female first names (also known as [given](https://en.wikipedia.org/wiki/Given_name) or personal names) in English speaking countries.
+
+``` javascript
+var names = datasets[ 'female-first-names-en' ];
+
+console.log( names );
+/*
+	[
+		"Aaren",
+		"Aarika",
+		"Abagael",
+		"Abagail",
+		"Abbe",
+		"Abbey",
+		"Abbi",
+		...
+	]
+*/
+``` 
+
+
+### Anscombe's Quartet
+
+A [set](https://github.com/datasets-io/anscombes-quartet) of `4` datasets which all have nearly identical simple statistical properties but vary considerably when graphed.
+
+``` javascript
+var data = datasets[ 'anscombes-quartet' ];
+
+console.dir( data );
+/*
+	[[...],[...],[...],[...]]
 */
 ```
 
